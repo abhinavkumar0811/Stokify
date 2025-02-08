@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Mega Navbar with Dropdowns</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="#">Stokify</a>
+    </div>
+
+    <!-- Search Box -->
+    <div class="search-box">
+      <input type="text" placeholder="Search for products..." />
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+
+    <!-- Navbar Links -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Electronics</a></li>
+      <li><a href="#">Fashion</a></li>
+      <li class="mega-dropdown">
+        <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+        <!-- Mega Menu -->
+        <div class="mega-menu">
+          <div class="mega-menu-row">
+            <h4>Electronics</h4>
+            <ul>
+              <li><a href="#">Mobiles</a></li>
+              <li><a href="#">Laptops</a></li>
+              <li><a href="#">Accessories</a></li>
+            </ul>
+          </div>
+          <div class="mega-menu-row">
+            <h4>Fashion</h4>
+            <ul>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Kids</a></li>
+            </ul>
+          </div>
+          <div class="mega-menu-row">
+            <h4>Home & Kitchen</h4>
+            <ul>
+              <li><a href="#">Furniture</a></li>
+              <li><a href="#">Appliances</a></li>
+              <li><a href="#">Decor</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li><a href="#">Offers</a></li>
+      <li><a href="#">Contact</a></li>
+
+      <!-- Login/Logout Button (Moved to the end) -->
+      <li class="user-actions">
+        <button id="login-btn" class="auth-btn">Login</button>
+        <button id="logout-btn" class="auth-btn" style="display: none;">Logout</button>
+      </li>
+    </ul>
+
+    <!-- Hamburger Menu Icon (Moved to the end) -->
+    <div class="menu-icon" id="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Mobile Search Box -->
+    <div class="mobile-search-box" id="mobile-search-box">
+      <input type="text" placeholder="Search for products..." />
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
